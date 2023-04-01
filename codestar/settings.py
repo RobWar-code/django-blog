@@ -32,7 +32,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECRET_KEY = 'django-insecure-khvb!a2dl74^+b$3logoc4kb^$ztl@eud=1fpb^+h301opx^50'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['my-django-blog-project.herokuapp.com', 'localhost']
 
